@@ -4,10 +4,10 @@ require('dotenv').config()
  
 
 var con = mysql.createConnection({
-  host: 'sql3.freemysqlhosting.net',
-  user: "sql3352612",
+  host: process.env.HOST ,
+  user: process.env.DBUSER,
   password: process.env.PASSWORD,
-  database: 'sql3352612'
+  database: process.env.DB
   
   
 });

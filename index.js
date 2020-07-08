@@ -27,8 +27,8 @@ const startServer = async () => {
     introspection: true,
     cors: corsOptions
   });
-  const PORT = process.env.PORT
-  server.listen(PORT).then(({ url }) => {
+  const port = process.env.PORT || 4000;
+  server.listen(port).then(({ url }) => {
     console.log(`server running on port ${url}`);
   });
 };
