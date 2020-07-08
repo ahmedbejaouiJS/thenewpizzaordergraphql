@@ -11,8 +11,8 @@ const typeDefs = gql`
 
     type testme {
         ok: String
-    } 
-    
+    }
+
     input QuserOrderNamePrice {
         id: String
         price: Int
@@ -21,18 +21,20 @@ const typeDefs = gql`
         quantityInCart: Int
         totalprice: Int
         inCart: Boolean
-    } 
+        img: String
+    }
     # Order Input Schema
-    input userOrder { 
+    input userOrder {
         name: String,
         surname: String,
         address: String,
         city: String,
         state: String,
-        zip: String, 
+        zip: String,
         order_name_quantity_price: [QuserOrderNamePrice!],
         currency: String
         totalprice: Int,
+        img: String
     }
 
     # return sucess if the order was successfully send

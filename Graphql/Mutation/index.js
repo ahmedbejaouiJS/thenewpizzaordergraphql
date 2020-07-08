@@ -9,8 +9,8 @@ const Mutation = {
         OrderSendFunction(name,surname,address,city,state,zip,order_name_quantity_price,totalprice,currency)
       console.log("inserted")
        return { success: "Order Have been Successfully Sent"}
-      } 
+      }
     }
-}; 
+};
 
 module.exports.Mutation = Mutation;
