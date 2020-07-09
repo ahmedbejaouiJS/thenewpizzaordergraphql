@@ -3,13 +3,11 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
 
-    type Query {
-
-        GetUserOrder: String
-        getOk: String
+    type Query { 
+        getOk: TestRequest
     }
 
-    type testme {
+    type TestRequest {
         ok: String
     }
 
